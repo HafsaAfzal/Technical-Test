@@ -1,0 +1,15 @@
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
