@@ -48,21 +48,26 @@ const Header = () => {
         <Select
           defaultValue="May"
           className={styles.monthYearSelect}
-          options={[{ value: 'May', label: 'May' }, { value: 'June', label: 'June' }]}
+        popupClassName="customDropdown"
+
+          options={[{ value: 'May', label: 'May' }, { value: 'June', label: 'June' },{ value: 'July', label: 'July' }]}
         />
         <Select
           defaultValue="2025"
           className={styles.monthYearSelect}
+          popupClassName="customDropdown"
           options={[{ value: '2025', label: '2025' }, { value: '2024', label: '2024' }]}
         />
         <Select
           defaultValue="SDR"
           className={styles.filterSelect}
+          popupClassName="customDropdown"
           options={[{ value: 'SDR', label: 'SDR' }, { value: 'Company', label: 'Company' }]}
         />
         <Select
           defaultValue="Telesales"
           className={styles.filterSelect}
+          popupClassName="customDropdown"
           options={[
             { value: 'All', label: 'All' },
             { value: 'Telesales', label: 'Telesales' },

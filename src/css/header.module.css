@@ -131,10 +131,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1.5rem;
-  background-color: #1e1e1e;
+
+  background-color: #2a2a2a;
   color: white;
   border-bottom: 2px solid #ff7f50;
   flex-wrap: wrap;
+  margin: 0px 20px 0px 20px;
 }
 
 .title {
@@ -159,7 +161,7 @@ text-transform: uppercase;
 .monthYearSelect :global(.ant-select-selector) {
   width: 80px !important;
   height: 32px;
-  background-color: #1e1e1e !important;
+  background-color:  #2a2a2a !important;
   color: white !important;
   border: 1px solid #ff7f50 !important;
   border-radius: 0 !important; 
@@ -169,7 +171,7 @@ text-transform: uppercase;
 .filterSelect :global(.ant-select-selector) {
   width: 140px !important;
   height: 32px;
-  background-color: #1e1e1e !important;
+  background-color:  #2a2a2a !important;
   color: white !important;
   border: 1px solid #ff7f50 !important;
   border-radius: 0 !important; 
@@ -178,6 +180,7 @@ text-transform: uppercase;
 
 :global(.ant-select-selection-item) {
   color: white !important;
+   
 }
 
 .total {
@@ -187,7 +190,30 @@ text-transform: uppercase;
   align-items: center;
   border: 1px solid #ff7f50;
   color: white;
-  background-color: #1e1e1e;
-  font-weight: bold;
+  background-color:  #2a2a2a;
+  /* font-weight: bold; */
+  font-family: 'Roboto', sans-serif;
 }
+
+:global(.customDropdown) {
+  background-color: #1e1e1e;
+   border-radius: 0 !important; 
+  /* border: 1px solid #ff7f50; */
+}
+
+:global(.customDropdown .ant-select-item) {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+:global(.customDropdown .ant-select-item-option-selected) {
+  background-color:#1e1e1e !important;
+  color: white !important;
+}
+
+:global(.customDropdown .ant-select-item-option-active) {
+  background-color: #444 !important;
+  color: white !important;
+}
+
 
