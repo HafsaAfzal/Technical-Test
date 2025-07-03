@@ -1,0 +1,113 @@
+/* Hide scrollbar completely while keeping scroll functionality */
+.hideScrollbar {
+  overflow: auto; /* or scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+
+.modalWrapper {
+  padding: 24px;
+  background: #1f1f1f;
+  color: #fff;
+  height: 100%;
+  overflow-y: auto; /* Allow scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  
+}
+.modalWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modalTitle {
+  color:white; /* orange */
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.closeIcon {
+  color: #ff7a45 !important; /* make X icon orange */
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.input {
+  margin-bottom: 12px;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid #737070;
+  border-radius: 0px !important;
+}
+.input:hover,
+  .input:focus {
+    background-color: #141414 !important;
+    border: 1px solid #737070;
+  }
+
+  .input::placeholder {
+    color: #bbb !important; /* light gray placeholder */
+    opacity: 1;
+  }
+
+.checkbox {
+  color: #fff;
+  margin-bottom: 12px;
+
+}
+:global(.ant-checkbox-inner) {
+  background-color: transparent !important; /* Remove checkbox background */
+  border-radius: 0px !important; /* Sharp corners */
+}
+
+
+.saveBtn {
+  background-color: #ff7a45;
+  border: none;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+
+
+.deleteBtn {
+  background-color: #262626;
+  border: none;
+  font-weight: bold;
+}
+
+
+:global(.ant-tabs-tab-btn) {
+  color: #a0a0a0 !important;
+  font-weight: 600;
+}
+
+:global(.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn) {
+  color: #ff7a45 !important;
+}
+
+:global(.ant-tabs-nav::before) {
+  border-bottom: none !important;
+}
+
+:global(.ant-tabs-ink-bar) {
+  background: none !important;
+  height: 0 !important;
+}
+
+

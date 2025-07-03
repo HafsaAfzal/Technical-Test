@@ -1,5 +1,5 @@
 import { InvoicingPage } from "./pages/InvoicingPage";
-
+import 'antd/dist/reset.css';
 
 function App() {
  
