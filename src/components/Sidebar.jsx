@@ -1,30 +1,28 @@
-// import styles from '../css/sidebar.module.css';
 
-
-// const Sidebar = () => {
-//   return (
-//     <div className={styles.sidebar}>
-//       <div className={styles.logo}>SDR</div>
-//       <div className={styles.menu}></div>
-      
-//     </div>
-//   );
-// };
-
-// export default Sidebar;
-
-///////////////////////////////////////////////////////////////////////////
-// Sidebar.jsx
 import { Layout, Menu } from 'antd';
 
-import {CalendarCheck,ChartNoAxesCombined,ChartPie,FileChartPie,LogOut,UsersRound,WrapText} from "lucide-react";
+import {CalendarCheck,ChartNoAxesCombined,ChartPie,FileChartPie,LogOut,UsersRound,WrapText,CircleUserRound} from "lucide-react";
 import styles from '../css/sidebar.module.css';
 import { useState } from 'react';
 
 const { Sider } = Layout;
 
 const Sidebar = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState (false);
+  const  menuItems=[
+          { key: '1', icon: <UsersRound  strokeWidth={3} />, label: '' },
+          { key: '2', icon: <WrapText strokeWidth={3}  />, label: '' },
+          { key: '3', icon: <ChartPie strokeWidth={3}  />, label: '' },
+          { key: '4', icon: <ChartNoAxesCombined strokeWidth={3} />, label: '' },
+          { key: '5', icon: <CalendarCheck  strokeWidth={3} />, label: '' },
+          { key: '6', icon: <FileChartPie strokeWidth={3}  />, label: '' },
+          // { 
+          //   style: { marginTop: '2rem' },
+          //   key: '7', 
+          //   icon: <LogOut  strokeWidth={3} className="logoutIcon" />,
+          //    label: '' 
+          //   },
+        ]
 
   return (
     <Sider
@@ -36,29 +34,38 @@ const Sidebar = () => {
       theme="dark"
     >
       <div className={styles.logo}> 
-        <img src="/logo.svg" alt="logo" className={styles.logoIcon} />
+        <CircleUserRound   strokeWidth={3}   className={styles.logoIcon}  ></CircleUserRound>
+
+        
       </div>
+
 
       <Menu
         mode="inline"
         theme="dark"
         defaultSelectedKeys={['1']}
         className={styles.menu}
-        items={[
-          { key: '1', icon: <UsersRound />, label: '' },
-          { key: '2', icon: <WrapText />, label: '' },
-          { key: '3', icon: <ChartPie />, label: '' },
-          { key: '4', icon: <ChartNoAxesCombined />, label: '' },
-          { key: '5', icon: <CalendarCheck />, label: '' },
-          { key: '6', icon: <FileChartPie />, label: '' },
-          { 
-            style: { marginTop: '2rem' },
-            key: '7', 
-            icon: <LogOut />,
-             label: '' 
-            },
-        ]}
+        // items={[
+        //   { key: '1', icon: <UsersRound  strokeWidth={3} />, label: '' },
+        //   { key: '2', icon: <WrapText strokeWidth={3}  />, label: '' },
+        //   { key: '3', icon: <ChartPie strokeWidth={3}  />, label: '' },
+        //   { key: '4', icon: <ChartNoAxesCombined strokeWidth={3} />, label: '' },
+        //   { key: '5', icon: <CalendarCheck  strokeWidth={3} />, label: '' },
+        //   { key: '6', icon: <FileChartPie strokeWidth={3}  />, label: '' },
+        //   { 
+        //     style: { marginTop: '2rem' },
+        //     key: '7', 
+        //     icon: <LogOut  strokeWidth={3} className="logoutIcon" />,
+        //      label: '' 
+        //     },
+        // ]}
+        items={menuItems}
       />
+       <div className={styles.logoutItem}>
+        <LogOut strokeWidth={3} />
+      </div>
+    {/* </div> */}
+     
     </Sider>
   );
 };
