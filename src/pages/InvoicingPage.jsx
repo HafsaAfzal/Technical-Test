@@ -4,7 +4,7 @@ import { fetchInvoicingData } from '../api/invoicingAPI';
 import styles from '../css/invoicing.module.css';
 
 import Header from '../components/Header.jsx';
-import { InvoicingCard } from '../Components/InvoicingCard.jsx';
+import { InvoicingCard } from '../components/InvoicingCard.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 
 export const InvoicingPage = () => {
