@@ -1,15 +1,14 @@
 
 
-/*//////////////////////////////////////////////////*/
-/* Hide scrollbar completely while keeping scroll functionality */
+
 .hideScrollbar {
-  overflow: auto; /* or scroll */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  overflow: auto; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .hideScrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
 
 
@@ -18,9 +17,9 @@
 .wrapper {
   display: flex;
     height: 100%;
-  overflow-y: auto; /* Allow scroll */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+  overflow-y: auto; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
   
   
 }
@@ -53,7 +52,7 @@
   font-family: 'Roboto', sans-serif;;
 }
 
-/* Progress bar container */
+
 .barWrapper {
   flex: 1;
   background-color: #3a3a3a;
@@ -64,7 +63,7 @@
   height: 32px;
 }
 
-/* Colored bar fill */
+
 .bar {
   position: absolute;
   top: 0;
@@ -83,7 +82,7 @@
   white-space: nowrap;
 }
 
-/* Text on top aligned to right */
+
 .totalOverlay {
   position: relative;
   z-index: 2;
@@ -104,3 +103,9 @@
   width: 100%;
    font-family: 'Roboto', sans-serif;
 }
+
+
+
+
+
+

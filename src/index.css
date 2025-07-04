@@ -10,3 +10,37 @@ html, body, #root {
   width: 100%;
   
 }
+
+html, body {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+.ant-drawer-body{
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.ant-drawer-body::-webkit-scrollbar {
+  display: none; 
+}
+
+.ant-menu.ant-menu-dark {
+  background-color: #1e1e1e !important;
+}
+
+/* Hide number input spinner in Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinner in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
